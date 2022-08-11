@@ -122,16 +122,16 @@ public class TechJobs {
 
         if(someJobs.size() > 0) {
             for (HashMap<String, String> job : someJobs) {
-                String jobString = "*****\n";
+                String jobString = "\n*****\n";
                 for (String key : job.keySet()) {
-                    //System.out.println(key +": " + job.get(key));
+
                     jobString += key + ": " + job.get(key) + "\n";
                 }
-                jobString += "*****\n";
+                jobString += "*****";
                 System.out.println(jobString);
             }
         }else{
-            System.out.println("No Results");
+            System.out.print("No Results");
         }
     }
 }
