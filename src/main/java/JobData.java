@@ -110,7 +110,6 @@ public class JobData {
             for(String aColumn : row.keySet()){
                 String aValue = row.get(aColumn).toLowerCase();
 
-
                 if(aValue.contains(value) && !added){
                     jobs.add(row);
                     added= true;
